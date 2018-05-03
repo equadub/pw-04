@@ -1,0 +1,7 @@
+nav ul li a.activo {
+    color: red;
+}
+
+nav ul {
+    list-style: none;
+}
