@@ -11,10 +11,20 @@
     <body>
 
         <div class="container">
-        <?php
-        include 'componentes/header.php';
-        include 'componentes/nav.php';
-        ?>
+            <?php
+            include 'componentes/header.php';
+            include 'componentes/nav.php';
+            ?>
+            <section>
+                <?php
+                echo "<h2>$titulo</h2>";
+                echo "<img src=\"$imagen\" alt=\"$titulo\">";
+                echo "<p>$contenido</p>";
+                ?>
+            </section>
+            <?php
+            include 'componentes/footer.php';
+            ?>
         </div>
         
     </body>

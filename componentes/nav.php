@@ -3,16 +3,18 @@
 
 <?php
 foreach ($secciones as $llave => $valor){
+    $destino ='?seccion='.$llave;
+    $activo = '';
     if (!isset($_GET['seccion']) and $llave === 'p1'){
-        $activo = '"activo"';
+        $activo = 'class="activo"';
     }
     if (isset($_GET['seccion']) and $_GET['seccion'] == $llave){
-        $activo = '"activo"';
+        $activo = 'class="activo"';
     }
     if ($llave === 'p1'){
         $destino = './';
     }
-    echo "<li><a class=$activo href=\"$destino\"> $valor[titulo] </a></li>";
+    echo "<li><a $activo href=\"$destino\"> $valor[titulo] </a></li>";
 }
 ?>
 

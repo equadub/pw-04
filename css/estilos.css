@@ -1,7 +1,41 @@
-nav ul li a.activo {
-    color: red;
+* {
+    margin: 0%;
+    padding: 1%;
 }
 
-nav ul {
+html {
+    background-color: gray;
+}
+
+nav ul li a.activo {
+    color: pink;
+}
+
+nav {
+    background-color: deeppink;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul{
+    margin: auto;
     list-style: none;
+    margin: auto;
+    padding: 0;
+}
+
+div {
+    background-color: white;
+}
+
+nav ul li {
+    display: inline-block;
+    text-align: center;
+    padding-right: 1%;
+}
+
+header, footer {
+    background-color: pink;
 }
